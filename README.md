@@ -118,8 +118,13 @@ The project uses Inter and Poppins fonts. You can change them in:
 The contact form currently displays an alert on submission. To integrate with a backend service:
 
 1. Update the `handleSubmit` function in `src/sections/Contact.jsx`
-2. Add your API endpoint
+2. Add your API endpoint or email service
 3. Handle form submission and error states
+
+Alternatively, you can integrate with services like:
+- **Formspree** - Simple form backend
+- **EmailJS** - Send emails directly from frontend
+- **Netlify Forms** - If hosting on Netlify
 
 ## 🚀 Deployment
 

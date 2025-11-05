@@ -4,10 +4,16 @@ import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 const Footer = () => {
   const currentYear = new Date().getFullYear()
   
+  // Email configuration - opens Gmail compose with your email pre-filled
+  const emailAddress = 'dhruvkkanwar2@gmail.com'
+  const emailSubject = encodeURIComponent('Portfolio Inquiry')
+  const emailBody = encodeURIComponent('Hi Dhruv,\n\nI would like to connect with you regarding...')
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${emailSubject}&body=${emailBody}`
+  
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
     { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaEnvelope, href: 'mailto:your.email@example.com', label: 'Email' },
+    { icon: FaEnvelope, href: gmailLink, label: 'Email' },
   ]
 
   return (

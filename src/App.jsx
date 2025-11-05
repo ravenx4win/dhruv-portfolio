@@ -21,7 +21,7 @@ const PROFILE_CONFIG = {
   // If you don't have an image yet, set it to null or empty string to show placeholder
   // profileImage: null,
   
-  description: "I'm Dhruv Kanwar, a software engineer obsessed with the intersection of AI, automation, and cloud computing. I love building systems that think, learn, and adapt — blending the art of Python with the science of scalable cloud architecture. From developing robust APIs to designing intelligent workflows, I aim to engineer products that redefine how technology interacts with the world."
+  description: "I'm Dhruv Kanwar, a software engineer obsessed with the intersection of AI, automation, and cloud computing. I love building systems that think, learn, and adapt,blending the art of Python with the science of scalable cloud architecture. From developing robust APIs to designing intelligent workflows, I aim to engineer products that redefine how technology interacts with the world."
 }
 // ==========================================
 

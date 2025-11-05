@@ -11,7 +11,7 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission here
+    // Handle form submission
     console.log('Form submitted:', formData)
     alert('Thank you for your message! I\'ll get back to you soon.')
     setFormData({ name: '', email: '', message: '' })
@@ -24,10 +24,16 @@ const Contact = () => {
     })
   }
 
+  // Email configuration - opens Gmail compose with your email pre-filled
+  const emailAddress = 'dhruvkkanwar2@gmail.com'
+  const emailSubject = encodeURIComponent('Portfolio Inquiry')
+  const emailBody = encodeURIComponent('Hi Dhruv,\n\nI would like to connect with you regarding...')
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailAddress}&su=${emailSubject}&body=${emailBody}`
+
   const socialLinks = [
     { icon: FaGithub, href: 'https://github.com', label: 'GitHub', color: 'hover:text-gray-900 dark:hover:text-white' },
     { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn', color: 'hover:text-blue-600 dark:hover:text-blue-400' },
-    { icon: FaEnvelope, href: 'mailto:your.email@example.com', label: 'Email', color: 'hover:text-red-500' },
+    { icon: FaEnvelope, href: gmailLink, label: 'Email', color: 'hover:text-red-500' },
     { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter', color: 'hover:text-blue-400' },
   ]
 
